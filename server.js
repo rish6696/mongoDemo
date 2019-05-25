@@ -8,7 +8,7 @@ const PORT=process.env.PORT||4578
 app.use('/put',require('./write'))
 app.use('/get',require('./read'))
 app.get('/',(req,res)=>{
-    console.log("welcome");
+    res.send("welcome");
 
 })
 
