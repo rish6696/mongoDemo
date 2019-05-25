@@ -2,7 +2,7 @@ const {MongoClient}=require('mongodb');
 const express=require('express');
 const router=express.Router();
 
-const Db_Url='mongodb://https://moridemo.herokuapp.com/:27017';
+const Db_Url='mongodb://<username>:<password>@ds113849.mlab.com:13849/mydb';
 
 router.post('/',(req,res)=>{
     
