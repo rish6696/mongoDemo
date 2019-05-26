@@ -11,7 +11,7 @@ MongoClient.connect(Db_Url,async (err,client)=>{
     if(err)
     throw err;
 
-    const db=client.db('mydb');
+    const db=client.db('heroku_ns1g333f');
     const info=db.collection('info');
     info.find({
         name:req.body.name

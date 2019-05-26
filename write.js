@@ -10,7 +10,7 @@ router.post('/',(req,res)=>{
         if(err)
         throw err;
     
-        const db=client.db('mydb');
+        const db=client.db('heroku_ns1g333f');
         const info=db.collection('info');
         info.insertOne({
             name:req.body.name,
