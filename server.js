@@ -9,6 +9,7 @@ const Db_Url='mongodb://rishabh:sharma78@moridemo.herokuapp.com:'+PORT+'/mydb';
 app.use('/put',require('./write'))
 app.use('/get',require('./read'))
 app.get('/',(req,res)=>{
+    console.log(Db_Url);
     res.send("welcome");
 
 })
