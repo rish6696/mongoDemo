@@ -2,9 +2,10 @@ const {MongoClient}=require('mongodb');
 const express=require('express');
 const router=express.Router();
 
-const dburl="mongodb://<username>:<password>@ds113849.mlab.com:13849/mydb";
+const dburl=require('./server');
 router.post('/',(req,res)=>{
 
+    console.log(dburl);
     MongoClient.connect(dburl,async (err,client)=>{
         if(err)
         throw err;
