@@ -2,7 +2,7 @@ const {MongoClient}=require('mongodb');
 const express=require('express');
 const router=express.Router();
 
-const dburl='mongodb://heroku_ns1g333f:qbk7pS2WJaij8W8@ds261616.mlab.com:61616/heroku_ns1g333f'
+const dburl='mongodb://heroku_63l1c2xk:p394l07c106kvc70hbbditc3lm@ds261616.mlab.com:61616/heroku_63l1c2xk'
 router.post('/',(req,res)=>{
 
     console.log(dburl);
@@ -10,7 +10,7 @@ router.post('/',(req,res)=>{
         if(err)
         throw err;
     
-        const db=client.db('heroku_ns1g333f');
+        const db=client.db('heroku_63l1c2xk');
         const info=db.collection('info');
         info.insertOne({
             name:req.body.name,
